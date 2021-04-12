@@ -10,6 +10,13 @@ public class Trip {
     private String destiny;
     private BigDecimal price;
 
+    public Trip(LocalDate startOfTrip, LocalDate endOfTrip, String destiny, BigDecimal price) {
+        this.startOfTrip = startOfTrip;
+        this.endOfTrip = endOfTrip;
+        this.destiny = destiny;
+        this.price = price;
+    }
+
     public LocalDate getStartOfTrip() {
         return startOfTrip;
     }
